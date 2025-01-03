@@ -11,10 +11,5 @@
       "src": "/(.*)",
       "dest": "backend/index.js"
     }
-  ],
-  "functions": {
-    "backend/index.js": {
-      "maxDuration": 10 // Adjust as needed, up to 60 seconds
-    }
-  }
-}
+  ]
+} 
