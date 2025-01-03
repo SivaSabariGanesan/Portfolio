@@ -11,5 +11,10 @@
       "src": "/(.*)",
       "dest": "backend/index.js"
     }
-  ]
-} 
+  ],
+  "functions": {
+    "backend/index.js": {
+      "maxDuration": 30 // Set an appropriate timeout (maximum 60 seconds for Pro users)
+    }
+  }
+}
