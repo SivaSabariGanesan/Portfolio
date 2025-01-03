@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  cursor: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
+
+.glitch-text {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 
+    0.05em 0 0 rgba(255, 204, 0, 0.75),
+    -0.025em -0.05em 0 rgba(255, 204, 0, 0.75),
+    0.025em 0.05em 0 rgba(255, 204, 0, 0.75);
+  animation: glitch 500ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 
+      0.05em 0 0 rgba(255, 204, 0, 0.75),
+      -0.05em -0.025em 0 rgba(255, 204, 0, 0.75),
+      -0.025em 0.05em 0 rgba(255, 204, 0, 0.75);
+  }
+  14% {
+    text-shadow: 
+      0.05em 0 0 rgba(255, 204, 0, 0.75),
+      -0.05em -0.025em 0 rgba(255, 204, 0, 0.75),
+      -0.025em 0.05em 0 rgba(255, 204, 0, 0.75);
+  }
+  15% {
+    text-shadow: 
+      -0.05em -0.025em 0 rgba(255, 204, 0, 0.75),
+      0.025em 0.025em 0 rgba(255, 204, 0, 0.75),
+      -0.05em -0.05em 0 rgba(255, 204, 0, 0.75);
+  }
+  49% {
+    text-shadow: 
+      -0.05em -0.025em 0 rgba(255, 204, 0, 0.75),
+      0.025em 0.025em 0 rgba(255, 204, 0, 0.75),
+      -0.05em -0.05em 0 rgba(255, 204, 0, 0.75);
+  }
+  50% {
+    text-shadow: 
+      0.025em 0.05em 0 rgba(255, 204, 0, 0.75),
+      0.05em 0 0 rgba(255, 204, 0, 0.75),
+      0 -0.05em 0 rgba(255, 204, 0, 0.75);
+  }
+  99% {
+    text-shadow: 
+      0.025em 0.05em 0 rgba(255, 204, 0, 0.75),
+      0.05em 0 0 rgba(255, 204, 0, 0.75),
+      0 -0.05em 0 rgba(255, 204, 0, 0.75);
+  }
+  100% {
+    text-shadow: 
+      -0.025em 0 0 rgba(255, 204, 0, 0.75),
+      -0.025em -0.025em 0 rgba(255, 204, 0, 0.75),
+      -0.025em -0.05em 0 rgba(255, 204, 0, 0.75);
+  }
+}
